@@ -1,18 +1,29 @@
 /* The Silicon Drafts - Custom Animations */
 
-/* Elegant, seamless, never-ending shifting gradient for the Hero Title */
+/* The Silicon Drafts - Custom Animations */
+
+/* Elegant, metallic silicon shine effect for the Hero Title */
 .VPHero .name {
-  background: linear-gradient(270deg, #5c73e7, #8e5cd9, #3dd68c, #5c73e7);
-  background-size: 300% 300%;
+  background: linear-gradient(
+    110deg,
+    var(--vp-c-brand-3) 0%,
+    var(--vp-c-brand-1) 25%,
+    var(--vp-c-white) 50%,
+    var(--vp-c-brand-1) 75%,
+    var(--vp-c-brand-3) 100%
+  );
+  background-size: 200% auto;
+  color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: gradientShift 10s ease infinite;
+  animation: siliconShine 4s linear infinite;
+  filter: drop-shadow(0 0 10px rgba(100, 108, 255, 0.3));
 }
 
-@keyframes gradientShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+@keyframes siliconShine {
+  to {
+    background-position: 200% center;
+  }
 }
 
 /* Subtle floating animation for the Hero Image if one is added later */
