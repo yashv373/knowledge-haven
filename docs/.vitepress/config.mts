@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   base: '/knowledge-haven/',
-  title: "Knowledge Haven",
+  title: "The Silicon Drafts",
   description: "My personal chip design and RTL practice knowledge base",
   themeConfig: {
     nav: [

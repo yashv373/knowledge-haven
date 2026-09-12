@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: "Knowledge Haven"
+  name: "The Silicon Drafts"
   text: "Chip Design & RTL Portfolio"
   tagline: "My personal notebook for Digital Design, Computer Architecture, and Hardware Engineering."
   actions:
