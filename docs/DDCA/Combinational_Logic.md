@@ -151,7 +151,7 @@ A 4:1 MUX with a 2-bit select `[1:0]` has exactly 4 possible input states (0, 1,
 
 | # | Source | Problem Name | Concepts Hit | Status |
 |---|--------|-------------|-------------|--------|
-| 1 | ChipDev | Remove an inferred latch | MUX, don't cares, latch inference | ✅ Solved |
+| 1 | [SoC RTL Lab](https://xizhuwang.github.io/rtl-interview-lab/) (Xi-Zhu Wang) | Remove an inferred latch (`rtl-latch-debug`) | MUX, latch inference, don't cares. **Key insight:** Having a `default` case does NOT automatically prevent latch inference — the latch is caused by any execution path where the output is not assigned a *new* value. `default: y = y;` still infers a latch because it tells the synthesizer to hold the previous value, which requires memory. The fix is to assign a concrete, definitive value (e.g., `8'd0`) in every branch. Also: always match bit-widths in assignments. | ✅ Solved |
 | | | | | |
 | | | | | |
 
